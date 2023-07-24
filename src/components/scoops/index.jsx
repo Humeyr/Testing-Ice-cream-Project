@@ -27,10 +27,10 @@ const Scoops = () => {
 
   return (
     <div className="container text-light">
-      <h1 className="mt-4 text-dark">Dondurma Çeşitleri</h1>
-      <p>Tanesi 3$</p>
+      <h1 className="mt-4 text-dark">Types</h1>
+      <p>3$ Each</p>
 
-      <h2 className='text-dark'>Çeşitler Ücreti: {scoopBasket.length * 3}$</h2>
+      <h2 className='text-dark'>Price: {scoopBasket.length * 3}$</h2>
       <div className="row gap-5 p-3 text-dark justify-content-between text-nowrap">
         {scoopsData.map((scoop) => {
           // renderladığımız kategoriye ait kaç ürün sepette var bulma

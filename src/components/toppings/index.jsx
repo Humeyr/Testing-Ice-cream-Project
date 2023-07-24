@@ -24,9 +24,9 @@ const Toppings = () => {
 
   return (
     <div className="container text-dark my-5">
-      <h1>Sos Çeşitleri</h1>
-      <p>Tanesi 2$</p>
-      <h2>Soslar Ücreti: {basket.length * 2} $</h2>
+      <h1>Souce Types</h1>
+      <p>2$ Each</p>
+      <h2>Price: {basket.length * 2} $</h2>
 
       <div className="row gap-5 mt-4">
         {tops.map((top) => (

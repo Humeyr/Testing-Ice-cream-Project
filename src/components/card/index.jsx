@@ -20,14 +20,14 @@ const Card = ({
           onClick={() => handleReset(scoop)}
           className="btn btn-danger"
         >
-          Sıfırla
+          Reset
         </button>
         <span className="lead">{amount}</span>
         <button
           className="btn btn-warning"
           onClick={() => setScoopBasket([...scoopBasket, scoop])}
         >
-          Ekle
+          Add
         </button>
       </div>
     </div>

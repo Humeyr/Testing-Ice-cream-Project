@@ -9,7 +9,7 @@ test("sos kartlarının sepet state'i üzerinde yaptığı değişim", async () 
 
   //   toplam başlığını çağırma
   const total = screen.getByRole('heading', {
-    name: /Soslar Ücreti: /i,
+    name: /Price: /i,
   });
 
   // kiraz inputun alınması

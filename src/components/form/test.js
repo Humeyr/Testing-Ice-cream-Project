@@ -10,11 +10,11 @@ test('koşulların onaylanmasını göre buton aktifliği', async () => {
 
   // gerekli elemanları alma
   const termsCheck = screen.getByRole('checkbox', {
-    name: 'Kosulları okudum ve kabul ediyorum',
+    name: ' I have read the requirements and approve',
   });
 
   const orderBtn = screen.getByRole('button', {
-    name: /siparişi onayla/i,
+    name: /Confirm Order/i,
   });
 
   // buton inaktif olmasını kontrol etme
@@ -39,12 +39,12 @@ test('onayla butonun üstüne mouse gelmesine göre bildirim', async () => {
 
   // checbox'ı çağırma
   const termsCheck = screen.getByRole('checkbox', {
-    name: 'Kosulları okudum ve kabul ediyorum',
+    name: 'I have read the requirements and approve',
   });
 
   // butonu çağırma
   const button = screen.getByRole('button', {
-    name: /siparişi onayla/i,
+    name: /Confirm Order/i,
   });
 
   //   checbox'ı tikleme
@@ -55,7 +55,7 @@ test('onayla butonun üstüne mouse gelmesine göre bildirim', async () => {
 
   // bildirimi çağırma
   const popup = screen.getByText(
-    'Size gerçekten bir şey teslim etmiyeceğiz'
+    'We will not deliver anything'
   );
 
   // bildirim görünüyor mu ?

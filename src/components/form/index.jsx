@@ -20,11 +20,11 @@ const Form = () => {
           className="bg-light rounded p-2 shadow"
           data-testid="popup"
         >
-          Size gerçekten bir şey teslim etmiyeceğiz
+          We will not deliver anything
         </p>
 
         <label htmlFor="terms">
-          Kosulları okudum ve kabul ediyorum
+          I have read the requirements and approve
         </label>
       </div>
 
@@ -34,7 +34,7 @@ const Form = () => {
         onMouseEnter={() => setIsVisible(true)}
         onMouseLeave={() => setIsVisible(false)}
       >
-        Siparişi Onayla
+        Confirm Order
       </button>
     </div>
   );
